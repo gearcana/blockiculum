@@ -1,0 +1,92 @@
+:root {
+  --bg: #0f1115;
+  --panel: #161a21;
+  --ink: #e8eaed;
+  --dim: #a9b1bd;
+  --accent: #3fd16a;
+  --line: #262c36;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  padding: 0 20px 72px;
+  background: var(--bg);
+  color: var(--ink);
+  font: 16px/1.65 "Segoe UI", system-ui, -apple-system, sans-serif;
+}
+
+main { max-width: 760px; margin: 0 auto; }
+
+header {
+  padding: 56px 0 28px;
+  border-bottom: 1px solid var(--line);
+  margin-bottom: 32px;
+}
+
+.brand {
+  font-size: clamp(30px, 6vw, 44px);
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  margin: 0;
+}
+
+.brand span { color: var(--accent); }
+
+.tagline { color: var(--dim); margin: 10px 0 0; font-size: 17px; }
+
+h2 {
+  font-size: 21px;
+  margin: 36px 0 10px;
+  padding-top: 4px;
+}
+
+h3 { font-size: 17px; margin: 24px 0 6px; color: var(--accent); }
+
+p, li { color: var(--ink); }
+
+.dim { color: var(--dim); }
+
+ul { padding-left: 22px; }
+li { margin: 6px 0; }
+
+a { color: var(--accent); }
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  margin-top: 22px;
+  font-size: 15px;
+}
+
+.card {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 18px 22px;
+  margin: 18px 0;
+}
+
+.updated {
+  color: var(--dim);
+  font-size: 14px;
+  margin-top: 4px;
+}
+
+footer {
+  margin-top: 56px;
+  padding-top: 20px;
+  border-top: 1px solid var(--line);
+  color: var(--dim);
+  font-size: 14px;
+}
+
+code {
+  background: #0b0d11;
+  border: 1px solid var(--line);
+  border-radius: 5px;
+  padding: 1px 6px;
+  font-size: 14px;
+}
